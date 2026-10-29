@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f7">
+  <title>Worker Ally | Command Center</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="Worker Ally command center home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 8.5 10 24h4l3-9 3 9h4l5-15.5h-4L22 19l-3.1-9h-3.8L12 19 9 8.5z"/></svg></span>
+        <span class="brand-name">worker<span>ally</span><small>AGENCY COMMAND</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom">
+        <div class="demo-note"><span class="dot"></span><span>DEMO ENVIRONMENT<br><small>Fictional data only</small></span></div>
+        <button class="sidebar-user" id="roleButton" type="button">
+          <span class="avatar avatar-teal">AD</span><span class="user-meta"><b id="roleName">Agency Admin</b><small>Role preview</small></span><span class="chevron">⌄</span>
+        </button>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <div class="crumb"><span>Worker Ally</span><b>/</b><strong id="topTitle">Overview</strong></div>
+        <div class="top-actions">
+          <span class="local-label"><span class="status-pulse"></span> Local demo data</span>
+          <button class="icon-button" id="privacyButton" aria-label="Privacy information" title="Privacy information">ⓘ</button>
+          <span class="avatar avatar-navy">WA</span>
+        </div>
+      </header>
+      <main id="mainContent" tabindex="-1"></main>
+      <footer class="app-footer"><span>Worker Ally Command Center</span><span>Simulated data · Stored in this browser only</span></footer>
+    </div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="js/mock-data.js"></script>
+  <script src="js/data-store.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
